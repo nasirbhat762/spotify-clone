@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Serif+Vithkuqi&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(251, 227, 227);
+    font-family: 'Bebas Neue', sans-serif;
+
+}
+
+nav {
+    background-color: black;
+    color: white;
+    height: 60px;
+    display: flex;
+
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+nav ul li {
+    padding: 0px 10px;
+}
+
+.iconImage {
+    display: flex;
+    align-items: center;
+
+
+}
+
+.iconImage span {
+    padding: 0px 10px;
+    font-weight: bolder;
+    font-size: 25px;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px auto;
+    width: 80vw;
+    min-height: 74vh;
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: white;
+
+}
+.songItem {
+    background: white;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    border-radius: 23px;
+    padding: 10px;
+    margin-top: 5px;
+}
+.songItemImage{
+    border-radius: 23px;
+}
+.timeStamp i {
+    cursor: pointer;
+}
+
+.bottom {
+    background: black;
+    color: white;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    bottom: 0;
+
+}
+
+.gif {
+    opacity: 0;
+    transition: opacity 0.7s ease-in ;
+}
+
+#progressBar {
+    width: 80vw;
+    cursor: pointer;
+}
+
+.songControlIcons {
+    margin: 15px 5px;
+}
+
+.songControlIcons i {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 767px) {
+    body {
+      background-color: lightblue;
+    }
+    .bottom {
+        display: flex;
+        flex-direction: column;
+        column-gap: 20px;
+    }
+  }
